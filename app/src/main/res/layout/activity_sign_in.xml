@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="16dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitySignIn">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/switzer_semibold"
+        android:textColor="@color/primary_text"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="С возвращением" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/switzer_regular"
+        android:textColor="@color/secondary_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введите свои данные, чтобы войти" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        android:fontFamily="@font/switzer_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Логин" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/switzer_regular"
+        android:background="@drawable/edit_text"
+        android:inputType="textEmailAddress"
+        android:hint="Введите адрес эл. почты" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/switzer_medium"
+        android:textColor="@color/primary_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пароль" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="12dp"
+        android:textSize="14sp"
+        android:fontFamily="@font/switzer_regular"
+        android:background="@drawable/edit_text"
+        android:inputType="textPassword"
+        android:hint="Введите пароль"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/switzer_semibold"
+        android:textSize="16sp"
+        android:onClick="clickSignIn"
+        android:paddingVertical="16dp"
+        android:stateListAnimator="@null"
+        android:text="Войти" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:fontFamily="@font/switzer_regular"
+            android:textColor="@color/secondary_text"
+            android:text="Еще нет аккаунта?" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/switzer_medium"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp"
+            android:onClick="clickGoSignUp"
+            android:layout_weight="1"
+            android:text="Зарегистрироваться" />
+
+    </LinearLayout>
+
+</LinearLayout>
