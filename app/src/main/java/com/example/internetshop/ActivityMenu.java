@@ -28,7 +28,10 @@ public class ActivityMenu extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.navigation_main:
-                    selectedFragment = new MainFragment();
+                    if(selectedFragment == new MainFragment()){
+                        return false;
+                    }
+                    else selectedFragment = new MainFragment();
                     break;
                 case R.id.navigation_cart:
                     selectedFragment = new CartFragment();

@@ -20,4 +20,10 @@ public class ActivitySignIn extends AppCompatActivity {
         finish();
     }
 
+    public void clickSignIn(View view){
+        Intent intent = new Intent(getApplicationContext(),ActivityMenu.class);
+        startActivity(intent);
+        finishAffinity();
+    }
+
 }

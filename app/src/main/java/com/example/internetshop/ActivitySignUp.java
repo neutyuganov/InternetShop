@@ -20,4 +20,10 @@ public class ActivitySignUp extends AppCompatActivity {
         finish();
     }
 
+    public void clickSignUp(View view){
+        Intent intent = new Intent(getApplicationContext(),ActivityMenu.class);
+        startActivity(intent);
+        finishAffinity();
+    }
+
 }

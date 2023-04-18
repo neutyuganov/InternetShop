@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InternetShop"
+        android:theme="@style/Base.Theme.InternetShop"
         tools:targetApi="31">
         <activity
             android:name=".ActivitySignUp"
@@ -30,6 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ActivityMenu"
+            android:exported="false" />
     </application>
 
 </manifest>
