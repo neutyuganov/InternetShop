@@ -19,7 +19,7 @@ public class ActivityMenu extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new //HomeFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MainFragment()).commit();
     }
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
@@ -27,20 +27,20 @@ public class ActivityMenu extends AppCompatActivity {
             Fragment selectedFragment = null;
 
             switch (item.getItemId()) {
-                case R.id.navigation_home:
-                    selectedFragment = new //HomeFragment();
+                case R.id.navigation_main:
+                    selectedFragment = new MainFragment();
                     break;
-                case R.id.navigation_favorite:
-                    selectedFragment = new //FavoriteFragment();
+                case R.id.navigation_cart:
+                    selectedFragment = new CartFragment();
                     break;
-                case R.id.navigation_eye_scanner:
-                    selectedFragment = new //SearchFragment();
+                case R.id.navigation_chat:
+                    selectedFragment = new ChatFragment();
                     break;
-                case R.id.navigation_shopping:
-                    selectedFragment = new //ShoppingFragment();
+                case R.id.navigation_info:
+                    selectedFragment = new InfoFragment();
                     break;
-                case R.id.navigation_profile:
-                    selectedFragment = new //ProfileFragment();
+                case R.id.navigation_user:
+                    selectedFragment = new UserFragment();
                     break;
             }
 
