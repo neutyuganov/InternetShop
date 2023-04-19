@@ -52,4 +52,33 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:fontFamily="@font/switzer_medium"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/primary_text"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Гость" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/switzer_medium"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:text="uncnown@gmail.com" />
+
 </LinearLayout>
