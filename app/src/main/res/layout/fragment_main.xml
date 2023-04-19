@@ -60,7 +60,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button22"
+                android:id="@+id/cpu"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_marginStart="24dp"
@@ -75,7 +75,7 @@
                 android:textSize="13sp" />
 
             <Button
-                android:id="@+id/button23"
+                android:id="@+id/motherboard"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_marginStart="12dp"
@@ -90,7 +90,7 @@
                 android:textSize="13sp" />
 
             <Button
-                android:id="@+id/button24"
+                android:id="@+id/gpu"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_marginStart="12dp"
@@ -105,7 +105,7 @@
                 android:textSize="13sp" />
 
             <Button
-                android:id="@+id/button25"
+                android:id="@+id/rom"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:layout_marginStart="12dp"

@@ -18,7 +18,6 @@ ListView listview;
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_cart, container, false);
         listview = v.findViewById(R.id.listview);
-        adapter = new CustomAdapter
         return v;
     }
 }
