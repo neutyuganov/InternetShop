@@ -81,4 +81,16 @@
         android:layout_marginTop="2dp"
         android:text="uncnown@gmail.com" />
 
+    <TextView
+        android:id="@+id/textView11"
+        android:fontFamily="@font/switzer_medium"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/error"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClick"
+        android:text="Войти" />
+
 </LinearLayout>
