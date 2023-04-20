@@ -58,8 +58,8 @@ public class MainFragment extends Fragment {
                 try {
                     String content = getContent("https://117c-89-113-140-10.ngrok-free.app/api/%D0%A2%D0%BE%D0%B2%D0%B0%D1%80");
                     JSONObject root = new JSONObject(content);
-                    JSONObject response = root.getJSONObject("data");
-                    array= response.getJSONArray("memes");
+                    JSONObject response = root.getJSONObject("-----");
+                    array= response.getJSONArray("--------");
 
                     listView.post(new Runnable() {
                         @Override
